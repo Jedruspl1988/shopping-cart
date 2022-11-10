@@ -17,14 +17,10 @@ while selection != 0:
         added_item = input("What would you like to add?\n")
         added_items = input("Add items to the cart now:\n")
         shopping.append(added_items)
-    elif selection == 2:
-        print("Selected: Add an item to Shopping Cart.")
-        added_item = input("\nAdd an item to the cart now:\n")
-        shopping.append(added_item)
     elif selection == 3:
         print("Selected: Delete an item from Shopping Cart.\n")
         print(shopping)
-        removed_item = input("\nWhich item from your shopping cart would you like to remove?\n")
+        removed_item = input("Which item from your shopping cart would you like to remove?\n")
         print(removed_item + " was removed from your cart.")
         shopping.remove(removed_item)
         print(shopping)
@@ -34,5 +30,5 @@ while selection != 0:
         print("\nInvalid selection. Please select an option form the menu.")      
     print()
     menu()
-    selection = int(input("Please select from the menu\n"))
+    selection = int(input("\nPlease select from the menu\n"))
 print("Thanks for your business, we hope to see you again soon!")    
