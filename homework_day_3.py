@@ -10,11 +10,11 @@ selection = int(input("Please select from the menu:\n"))
 while selection != 0:
     if selection == 1:
         print("Selected: Start New Shopping Cart:") 
-        added_items = input("Add items to the cart now(separate each item by ','):\n")
+        added_items = input("What would you like to add?\n")
         shopping.append(added_items)
     elif selection == 2:
         print("Selected: Add an item to Shopping Cart.")
-        added_item = input("Add an item to the cart now(separate each item by ','):\n")
+        added_item = input("What would you like to add?\n")
         shopping.append(added_item)
     elif selection == 3:
         print("Selected: Delete an item from Shopping Cart by entering a # first item = 0 and so on")
@@ -32,6 +32,4 @@ while selection != 0:
     menu()
     selection = int(input("Please select from the menu\n"))
 
-print("Thanks for your buisness, we hope to see you again soon!")    
-
-
+print("Thanks for your buisness, we hope to see you again soon!") # Fantastic greeting.
