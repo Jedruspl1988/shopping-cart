@@ -27,11 +27,7 @@ while selection != 0:
         print(shopping)   
     else:
         print("Invalid selection. Please select an option form the menu.")      
-
     print()
     menu()
     selection = int(input("Please select from the menu\n"))
-
-print("Thanks for your buisness, we hope to see you again soon!")    
-
-
+print("Thanks for your business, we hope to see you again soon!")    
