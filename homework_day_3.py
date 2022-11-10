@@ -6,28 +6,28 @@ def menu():
     print("[0] Pay &/or Exit.")
 shopping = []    
 menu()
-selection = int(input("Please select from the menu:\n"))
+selection = int(input("\nPlease select from the menu:\n"))
 while selection != 0:
     if selection == 1:
         print("Selected: Start New Shopping Cart:") 
-        added_items = input("Add items to the cart now:\n")
+        added_items = input("\nAdd items to the cart now:\n")
         shopping.append(added_items)
     elif selection == 2:
         print("Selected: Add an item to Shopping Cart.")
-        added_item = input("Add an item to the cart now:\n")
+        added_item = input("\nAdd an item to the cart now:\n")
         shopping.append(added_item)
     elif selection == 3:
-        print("Selected: Delete an item from Shopping Cart")
+        print("Selected: Delete an item from Shopping Cart.\n")
         print(shopping)
-        removed_item = input("Which item from your shopping cart would you like to remove?\n")
+        removed_item = input("\nWhich item from your shopping cart would you like to remove?\n")
         print(removed_item + " was removed from your cart.")
         shopping.remove(removed_item)
         print(shopping)
     elif selection == 4:
         print(shopping)   
     else:
-        print("Invalid selection. Please select an option form the menu.")      
+        print("\nInvalid selection. Please select an option form the menu.")      
     print()
     menu()
-    selection = int(input("Please select from the menu\n"))
+    selection = int(input("\nPlease select from the menu\n"))
 print("Thanks for your business, we hope to see you again soon!")    
